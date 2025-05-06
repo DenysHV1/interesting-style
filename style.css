@@ -75,7 +75,7 @@ body {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-.line h1 {
+.title {
   font-family: "Kaushan Script", cursive;
   font-size: 56px;
   font-weight: 900;
@@ -84,5 +84,85 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-decoration: none;
   text-shadow: 1px 1px 1px #daa520, 0 0 8px rgba(218, 165, 32, 0.8);
+}
+
+.special1,
+.special2,
+.special3 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.special1 {
+  padding: 5px 0;
+}
+
+.special1::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30% 25% 37% 32%;
+  animation: spin 3s linear infinite;
+  z-index: -1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special1:hover::before {
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.special2::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid rgba(42, 251, 0, 0.101);
+  border-radius: 37% 39% 25% 47%;
+  animation: spin 4s linear infinite;
+  z-index: -1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special2:hover::before {
+  border-color: rgba(42, 251, 0, 0.8);
+  box-shadow: 0 0 15px rgba(42, 251, 0, 0.7);
+}
+
+.special3::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid rgba(255, 0, 0, 0.184);
+  border-radius: 25% 45% 41% 25%;
+  animation: spin 8s linear infinite;
+  z-index: -1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special3:hover::before {
+  border-color: rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
