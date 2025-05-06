@@ -39,6 +39,9 @@ body {
   background-size: cover;
   border: 1px solid rgba(0, 0, 0, 0.277);
   box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
@@ -73,6 +76,25 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.name {
+  font-family: "Kaushan Script", cursive;
+  font-size: 56px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(90deg, #d607eb, #ff2467, #f4a115);
+  background: linear-gradient(90deg, #d607eb, #ff2467, #f4a115);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #daa520, 0 0 8px rgba(218, 165, 32, 0.8);
+  transform: rotate(90deg);
+  transition: transform 550ms ease;
+}
+
+.card:hover .name {
+  transform: rotate(0deg);
 }
 
 .title {
