@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   display: flex;
@@ -6,15 +7,15 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  height: 100vh;
-  background: -webkit-linear-gradient(90deg, #3d4052, #282a36, #09090c);
-  background: linear-gradient(90deg, #3d4052, #282a36, #09090c);
+  background: -webkit-linear-gradient(90deg, #4432ba, #120088, #000038);
+  background: linear-gradient(90deg, #4432ba, #120088, #000038);
 }
 
 .content {
   width: 95%;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgb(55, 0, 255) 0px 22px 70px 4px;
+  margin: 50px 0;
+  border: 3px solid rgba(0, 0, 0, 0.46);
 }
 
 .wrapper {
@@ -70,12 +71,11 @@ body {
 }
 
 .line {
-  background: -webkit-linear-gradient(90deg, #010114, #7349bc, #010114);
-  background: linear-gradient(90deg, #010114, #7349bc, #010114);
   padding: 0px 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  margin-bottom: 230px;
 }
 
 .name {
@@ -187,4 +187,13 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.video-wrapper {
+  height: 300px;
+  width: 100%;
+}
+
+.video-wrapper video {
+  width: 100%;
 }
