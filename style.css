@@ -237,3 +237,9 @@ body {
     transform: rotate(90deg);
   }
 }
+
+@media screen and (min-height: 1200px) {
+  body {
+    height: 100vh;
+  }
+}
