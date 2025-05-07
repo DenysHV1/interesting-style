@@ -203,7 +203,7 @@ body {
   }
 
   .line {
-    background-image: url(/images/title-bg.jpg);
+    background-image: url(./images/title-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
