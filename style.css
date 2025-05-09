@@ -248,3 +248,72 @@ body {
     height: 100vh;
   }
 }
+
+.nav-item{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(./images/nav.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transition: right 450ms cubic-bezier(0.215, 0.610, 0.355, 1),top 350ms cubic-bezier(0.215, 0.610, 0.355, 1), box-shadow 450ms ease;
+  z-index: 1;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+#navigation-js{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 550ms cubic-bezier(0.215, 0.610, 0.355, 1), right 350ms cubic-bezier(0.215, 0.610, 0.355, 1);
+border: none;
+outline: none;
+background-color: transparent;
+}
+
+#navigation-js::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url(./images/navMain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+
+.nav-1-js:hover{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.nav-2-js:hover{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.nav-3-js:hover{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.nav-4-js:hover{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.nav-5-js:hover{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
