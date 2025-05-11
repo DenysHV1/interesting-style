@@ -9,6 +9,7 @@ body {
   gap: 10px;
   background: -webkit-linear-gradient(90deg, #4432ba, #120088, #000038);
   background: linear-gradient(90deg, #4432ba, #120088, #000038);
+  transition: background-image 350ms ease;
 }
 
 .content {
@@ -104,7 +105,6 @@ body {
   background-clip: text;
   color: transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #daa520, 0 0 8px rgba(218, 165, 32, 0.8);
   transform: rotate(90deg);
   transition: transform 550ms ease;
 }
@@ -324,3 +324,4 @@ body {
 .nav-5-js:hover {
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
+

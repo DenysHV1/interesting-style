@@ -1,5 +1,6 @@
 const mainBtn = document.getElementById("navigation-js");
 const wrapper = document.querySelector(".wrapper");
+const names = document.querySelectorAll('.name');
 let click = 0;
 
 const transformArr1 = [
@@ -106,3 +107,35 @@ mainBtn.children[4].addEventListener("click", (e) => {
   }
   onHovers("1", "1", "1", "1", "4");
 });
+
+const bodyBGArr = [
+  "linear-gradient(90deg,#ffd700,#ff8c00,#ff4500)",
+  "linear-gradient(90deg,#ff0000,#ff00ff,#8d00f1)",
+  "linear-gradient(90deg,#000000,#0d1521,#070e18)",
+  "linear-gradient(90deg,#0a00cc,#000594)",
+  "linear-gradient(90deg,#4a0194,#992fc4,#e75af4)",
+  "linear-gradient(90deg,#250055,#5200a3,#6600ff,#3e00b3,#070055)",
+  "linear-gradient(90deg,#990036,#000000,#b30056)",
+  "linear-gradient(90deg,#ec7513,#cc1414,#340548,#1a1820)",
+  "linear-gradient(90deg,#84a94d,#60d69b,#21fff8)",
+  "linear-gradient(90deg,#eb2323,#e80000,#aa0000)",
+  "linear-gradient(90deg,#012d07,#015521,#012d07)",
+  "linear-gradient(90deg,#8cff00,#141414)",
+  "linear-gradient(90deg,#00ffff,#00ff00)",
+  "linear-gradient(90deg,#ff7518,#000000)",
+];
+
+
+function randomColor(arr) {
+  const max = arr.length;
+
+  setInterval(() => {
+    let randomIdx = Math.round(Math.random() * (max - 1) + 1);
+    [...names].forEach(name => {
+      name.style.backgroundImage = arr[randomIdx];
+    })
+    window.document.body.style.backgroundImage = arr[randomIdx];
+  }, 2000);
+}
+
+randomColor(bodyBGArr);
