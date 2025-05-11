@@ -55,11 +55,12 @@ function onHovers(el1, el2, el3, el4, el5) {
 mainBtn.addEventListener("click", (e) => {
   if (!click) {
     animateMenu(transformArr1, "40px", "rotate(23deg)");
+    wrapper.classList.add("events");
     click += 1;
   } else {
     animateMenu(transformArr2, "20px", "rotate(0deg)");
     click = 0;
-
+    wrapper.classList.remove("events");
     [...wrapper.children].forEach((item) => {
       item.style = "";
     });
