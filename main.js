@@ -1,6 +1,7 @@
 const mainBtn = document.getElementById("navigation-js");
 const wrapper = document.querySelector(".wrapper");
 const names = document.querySelectorAll('.name');
+const title = document.querySelector(".title")
 let click = 0;
 
 const transformArr1 = [
@@ -134,6 +135,7 @@ function randomColor(arr) {
     [...names].forEach(name => {
       name.style.backgroundImage = arr[randomIdx];
     })
+    title.style.backgroundImage = arr[randomIdx];
     window.document.body.style.backgroundImage = arr[randomIdx];
   }, 2000);
 }
