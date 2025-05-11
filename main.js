@@ -53,20 +53,21 @@ function onHovers(el1, el2, el3, el4, el5) {
 }
 
 mainBtn.addEventListener("click", (e) => {
-  if (e.currentTarget.nodeName !== "BUTTON") {
-    return;
-  }
   if (!click) {
     animateMenu(transformArr1, "40px", "rotate(23deg)");
     click += 1;
   } else {
-
     animateMenu(transformArr2, "20px", "rotate(0deg)");
     click = 0;
+
+    [...wrapper.children].forEach((item) => {
+      item.style = "";
+    });
   }
 });
 
 mainBtn.children[0].addEventListener("click", (e) => {
+  e.stopPropagation();
   if (e.currentTarget.nodeName !== "SPAN") {
     return;
   }
@@ -74,6 +75,7 @@ mainBtn.children[0].addEventListener("click", (e) => {
 });
 
 mainBtn.children[1].addEventListener("click", (e) => {
+  e.stopPropagation();
   if (e.currentTarget.nodeName !== "SPAN") {
     return;
   }
@@ -81,6 +83,7 @@ mainBtn.children[1].addEventListener("click", (e) => {
 });
 
 mainBtn.children[2].addEventListener("click", (e) => {
+  e.stopPropagation();
   if (e.currentTarget.nodeName !== "SPAN") {
     return;
   }
@@ -88,6 +91,7 @@ mainBtn.children[2].addEventListener("click", (e) => {
 });
 
 mainBtn.children[3].addEventListener("click", (e) => {
+  e.stopPropagation();
   if (e.currentTarget.nodeName !== "SPAN") {
     return;
   }
@@ -95,6 +99,7 @@ mainBtn.children[3].addEventListener("click", (e) => {
 });
 
 mainBtn.children[4].addEventListener("click", (e) => {
+  e.stopPropagation();
   if (e.currentTarget.nodeName !== "SPAN") {
     return;
   }
